@@ -6,6 +6,15 @@
 		<script type="text/javascript" src="./js/index.js"></script>
 		<script type="text/javascript">
 			console.log('sdf');
+			window.addEventListener('DOMContentLoaded', function() {
+                // 执行注册
+                navigator.serviceWorker.register('./ww1.js').then(function(registration) {
+					
+					registration.update();
+                }).catch(function(err) {
+                
+                }); 
+			});
 		</script>
 	</head>
 
